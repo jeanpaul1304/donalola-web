@@ -97,6 +97,9 @@ html, body {
     text-align: left;
     z-index: 2;
     background: 0;
+    line-height: 45px;
+    border: 0;
+    box-shadow: 0 0 0 0;
 }
 
 .nav-ctn nav h4 {
