@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+<div class="login-ctn">
+    <h1 class="title-ctn">
+        <img src="./img/logo.png" alt="dona lola">
+    </h1>
+
+    <div class="ctn-login">
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="email" type="email" class="validate" required>
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">lock</i>
+                <input id="password" type="password" class="validate" required>
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <div class="row text-center">
+            <a class="waves-effect waves-light btn btn-login">Iniciar sesión</a> <br>
+            <a href="#" class="login-link first">
+                <strong>Crea tu usuario</strong>
+            </a><br>
+            <a href="#" class="login-link">Olvide mi contraseña</a>
+        </div>
+    </div>
+</div>
+<div class="map-ctn hide">
+    <div class="menu">
+        <a href="javascript:;" class="menu-btn waves-effect waves-orange">
+            <i class="material-icons prefix">menu</i>
+        </a>
+        <div class="nav-ctn">
+            <nav>
+                <i class="material-icons btn waves-effect waves-orange btn-hide">keyboard_arrow_left</i>
+                <h4>MENU</h4>
+            </nav>
+            <a href="javascript:;" class="waves-effect waves-green btn-hide">
+                <img src="./img/chefs.png" alt="">
+                <p>Buscar chefs cerca de ti</p>
+            </a>
+            <a href="javascript:;" class="waves-effect waves-green">
+                <img src="./img/nombre.png" alt="">
+                <p>Buscar chefs por nombre</p>
+            </a>
+            <a href="javascript:;" class="waves-effect waves-green">
+                <img src="./img/config.png" alt="">
+                <p>Configuración</p>
+            </a>
+            <a href="javascript:;" class="waves-effect waves-green">
+                <img src="./img/curso.png" alt="">
+                <p>Pedidos en curso</p>
+            </a>
+        </div>
+    </div>
+    <div id="map"></div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -12.1062442   , lng: -77.0231938},
+            zoom: 13,
+            mapTypeControl: false,
+            streetViewControl: false,
+            fullscreenControl: false
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCplOQzYt_d7-3pTBkvuUuSWikVCIkWP7s&callback=initMap"
+        async defer></script>
+</body>
+
+</html>
