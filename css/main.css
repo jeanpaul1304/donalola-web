@@ -20,6 +20,8 @@ html, body {
     right: 0;
     background-size: cover;
     padding-top: 1vh;
+    padding-bottom: 4vh;
+    overflow: auto;
 }
 
 .title-ctn {
