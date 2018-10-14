@@ -14,7 +14,7 @@ html, body {
 .login-ctn {
     background: url("../img/bg.jpg");
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     left:0;
     right: 0;
@@ -108,4 +108,8 @@ html, body {
     z-index: 1;
     line-height: 56px;
     font-size: 22px;
+}
+
+.second-row{
+    margin: 0;
 }

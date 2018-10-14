@@ -12,7 +12,7 @@ document.querySelector('.btn-hide').addEventListener('click', () => {
 })
 
 document.querySelector('.btn-login').addEventListener('click', () => {
-    if (name.value == 'cliente@mail.com') {
+    if (name.value == 'cliente@gmail.com') {
         document.querySelector('.login-ctn').remove()
         mapa.classList.remove('hide')
     }
